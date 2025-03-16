@@ -26,7 +26,8 @@ RUN apt-get install -y \
     php8.0 php8.0-fpm php8.0-mysql php8.0-apcu php8.0-curl php8.0-dom php8.0-gd php8.0-ldap php8.0-mbstring php8.0-soap php8.0-xdebug php8.0-xml php8.0-zip \
     php8.1 php8.1-fpm php8.1-mysql php8.1-apcu php8.1-curl php8.1-dom php8.1-gd php8.1-ldap php8.1-mbstring php8.1-soap php8.1-xdebug php8.1-xml php8.1-zip \
     php8.2 php8.2-fpm php8.2-mysql php8.2-apcu php8.2-curl php8.2-dom php8.2-gd php8.2-ldap php8.2-mbstring php8.2-soap php8.2-xdebug php8.2-xml php8.2-zip \
-    php8.3 php8.3-fpm php8.3-mysql php8.3-apcu php8.3-curl php8.3-dom php8.3-gd php8.3-ldap php8.3-mbstring php8.3-soap php8.3-xdebug php8.3-xml php8.3-zip
+    php8.3 php8.3-fpm php8.3-mysql php8.3-apcu php8.3-curl php8.3-dom php8.3-gd php8.3-ldap php8.3-mbstring php8.3-soap php8.3-xdebug php8.3-xml php8.3-zip \
+    php8.4 php8.4-fpm php8.4-mysql php8.4-apcu php8.4-curl php8.4-dom php8.4-gd php8.4-ldap php8.4-mbstring php8.4-soap php8.4-xdebug php8.4-xml php8.4-zip
     # IMPORTANT: If you add / remove PHP versions, mind to update the `conf-files/supervisor/supervisord.conf` accordingly
 
 # - Enable Apache modules for FPM
@@ -54,6 +55,9 @@ COPY conf-files/php/fpm/* /etc/php/8.2/fpm/conf.d/
 #   - 8.3
 COPY conf-files/php/cli/* /etc/php/8.3/cli/conf.d/
 COPY conf-files/php/fpm/* /etc/php/8.3/fpm/conf.d/
+#   - 8.4
+COPY conf-files/php/cli/* /etc/php/8.4/cli/conf.d/
+COPY conf-files/php/fpm/* /etc/php/8.4/fpm/conf.d/
 
 # SSH server
 # - Install necessary packages for SSH server
