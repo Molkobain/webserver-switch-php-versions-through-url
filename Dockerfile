@@ -1,5 +1,5 @@
 # Use the official Ubuntu image
-FROM ubuntu:latest
+FROM ubuntu:24.04
 
 # Supervisor (to supervise services)
 # - Install necessary packages
