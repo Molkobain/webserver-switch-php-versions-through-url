@@ -1,1 +1,1 @@
-This repository is deprecated, I strongly suggest to use [Combodo/docker-environment]([url](https://github.com/Combodo/docker-environment)) instead which provide a more flexible and robust way of switching PHP version through an HTTP header.
+This repository is deprecated, I strongly suggest to use [Combodo/docker-environment](https://github.com/Combodo/docker-environment) instead which provide a more flexible and robust way of switching PHP version through an HTTP header.
